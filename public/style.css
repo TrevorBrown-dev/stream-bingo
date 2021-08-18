@@ -187,4 +187,50 @@ h6 {
   text-decoration: none !important;
 }
 
+@keyframes focus {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.015);
+  }
+}
+input {
+  all: unset;
+  padding: 1em;
+  border: 2px solid var(--color-light);
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+input:focus {
+  background-color: var(--color-dark);
+  border-color: var(--color-primary);
+}
+
+/* custom scrollbar */
+html > ::-webkit-scrollbar {
+  position: absolute;
+  width: 0.8em;
+  background-color: #4d4d4d;
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 0.5em;
+  background-color: #4d4d4d;
+}
+
+.description > ::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  border: 1em solid transparent;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #cccccc;
+}
+
 /*# sourceMappingURL=style.css.map */

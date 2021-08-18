@@ -1,10 +1,9 @@
 <script lang="ts">
     import BingoCard from '../components/BingoCard.svelte';
-    import BingoSquare from '../components/BingoSquare.svelte';
     import { game } from '../store/gameStore';
 </script>
 
-<main>
+<main class="game">
     <BingoCard allChallenges={$game.challenges} width={$game.size[0]} height={$game.size[1]} />
 </main>
 
