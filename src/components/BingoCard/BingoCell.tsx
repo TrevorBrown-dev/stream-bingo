@@ -1,6 +1,5 @@
 import { useContext } from "react"
 import { socketContext } from "../../contexts/socketContext"
-import { GameSocket } from "../../sockets/GameSocket"
 
 interface BingoCellProps extends React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement> { }
 

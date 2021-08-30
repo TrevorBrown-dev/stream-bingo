@@ -5,7 +5,6 @@ import { Socket } from "socket.io-client/build/socket";
 import { DefaultEventsMap } from "socket.io-client/build/typed-events";
 import { BingoCard } from "../components/BingoCard";
 import { socketContext } from "../contexts/socketContext";
-import { GameSocket } from "../sockets/GameSocket";
 
 export const Game: React.FC = () => {
     const [cellContent, setCellContent] = useState<string[]>(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]);
