@@ -5,6 +5,12 @@ import { Socket } from "socket.io-client/build/socket";
 import { DefaultEventsMap } from "socket.io-client/build/typed-events";
 import { BingoCard } from "../components/BingoCard";
 import { socketContext } from "../contexts/socketContext";
+/*
+ * I need to define some actions that can happen on the game
+ * I also need to come up with a solid design for the individual cards
+ * 
+ */
+
 
 export const Game: React.FC = () => {
     const [cellContent, setCellContent] = useState<string[]>(["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]);
